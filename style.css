@@ -2,16 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 body {font-family: 'Fredoka One', cursive;}
+body {background-color: #f2f4f5;}
+/* 
+Themes
+Light Mode: 
+Topbar: #dee1e3
+Main: #f2f4f5
+
+Dark Mode: 
+Topbar: #191b1d
+Main: #232527
+*/
 
 .navbar {
   width: 100%;
-  background-color: #555;
+  background-color: #dee1e3;
   overflow: auto;
 }
 
 .navbar a {
-  float: left;
-  padding: 12px;
+  float: center;
   color: white;
   text-decoration: none;
   font-size: 17px;
