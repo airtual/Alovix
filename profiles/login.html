@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Rubik&display=swap');
+</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Log In | Alovix</title>
+    
+     <script src="https://kit.fontawesome.com/bdc52decb4.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  
+  <style>
+/* 
+Themes
+Light Mode: 
+Topbar: #dee1e3
+Main: #f2f4f5
+Dark Mode: 
+Topbar: #191b1d
+Main: #232527
+Main color: 105, 85, 240 - Alovix Purple
+
+font-family: 'Fredoka One', cursive;
+font-family: 'Rubik', sans-serif;
+*/
+    body{
+    background-color: #f2f4f5;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    }
+
+*{
+    font-family: 'Fredoka One', cursive;
+    box-sizing: padding-box;
+}
+    
+    form {
+    width: 1000px;
+    border: 3px solid rgb(75, 75, 75);
+    padding: 20px;
+    background: rgb(100, 100, 100);
+    border-radius: 20px;
+}
+    h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+    input {
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+    
+    label {
+    color: #888;
+    font-size: 18px;
+    padding: 10px;
+}
+    
+button {
+    float: right;
+    background: (#6955f0);
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+}
+    
+button:hover{
+    opacity: .10;
+}
+    
+.error {
+   background: #F2DEDE;
+   color: #0c0101;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+}
+    
+h1 {
+    text-align: center;
+    color: rgb(134, 3, 3);
+}
+    
+a {
+    float: right;
+    background: rgb(183, 225, 233);
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: none;
+    text-decoration: none;
+}
+    
+a:hover{
+    opacity: .7;
+}
+
+    
+  </style>
+  
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Atorix</a>
+        <!--<div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <form action="login.php" method="post">
+
+        <h2>Login to Atorix</h2>
+
+        <?php if (isset($_GET['error'])) { ?>
+
+            <p class="error"><?php echo $_GET['error']; ?></p>
+
+        <?php } ?>
+
+        <label>Username</label>
+
+        <input type="text" name="uname" placeholder="Enter your username. "><br>
+
+        <label>Password</label>
+
+        <input type="password" name="password" placeholder="Enter your password."><br> 
+
+        <button type="submit">Login</button>
+
+     </form>
+
+
+            
+            
+</body>
