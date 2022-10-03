@@ -18,7 +18,9 @@ Main: #232527
   background-color: #dee1e3;
   overflow: auto;
 }
-
+.posts{
+background-color: #dee1e3;
+}
 .navbar a {  
   float: left;
   padding: 12px;
